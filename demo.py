@@ -7,11 +7,12 @@ def remove_punctuation(str):
     for char in my_str:
         if char not in punctuations:
             no_punct = no_punct + char
-    # display the unpunctuated string
-    print(no_punct)
+    return no_punct    
 
 if __name__=='__main__':
     # To take input from the user
     # my_str = input("Enter a string: ")
     my_str = "Hello!, he said ---and went."
-    remove_punctuation(my_str)
+    no_punct = remove_punctuation(my_str)
+    # display the unpunctuated string
+    print(no_punct)
